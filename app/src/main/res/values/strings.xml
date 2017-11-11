@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">GChat</string>
+
+    <string name="android">Android</string>
+    <string name="hyderabad">Hyderabad</string>
+    <string name="india">India</string>
+    <string name="oreo">Oreo</string>
+    <string name="nougat">Nougat</string>
+    <string name="pune">Pune</string>
+    <string name="country">Country</string>
+    <string name="usa">USA</string>
+    <string name="not_answered">Not Answered</string>
+    <string name="highly_rated">Highly Rated</string>
+    <string name="post">Post</string>
+    <string name="error_while_sending_data">Error while sending data</string>
+    <string name="name_not_found">Not Found</string>
+    <string name="cancel">Cancel</string>
+    <string name="okay">Okay</string>
+    <string name="_80">80%</string>
+    <string name="_60">60%</string>
+    <string name="change">Change</string>
+</resources>

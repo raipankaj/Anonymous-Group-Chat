@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvOreo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorGreen"
+        android:gravity="center"
+        android:text="@string/hyderabad"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorWhite"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvNougat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorGreen"
+        android:gravity="center"
+        android:text="@string/pune"
+        android:layout_marginTop="4dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorWhite"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintTop_toBottomOf="@+id/tvOreo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/_80"
+        android:textColor="@color/colorRed"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvOreo"
+        app:layout_constraintBottom_toBottomOf="@+id/tvOreo"
+        app:layout_constraintLeft_toRightOf="@+id/tvOreo"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/_60"
+        android:textColor="@color/colorRed"
+        android:gravity="center"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvNougat"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNougat"
+        app:layout_constraintLeft_toRightOf="@+id/tvNougat"/>
+
+</android.support.constraint.ConstraintLayout>

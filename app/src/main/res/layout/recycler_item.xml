@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/adapter_item_margin"
+    app:cardCornerRadius="@dimen/adapter_card_view_item_radius">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tvPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/recycler_item_padding"
+        android:textColor="@color/colorBlack"
+        app:fontFamily="@font/ledger"
+        tools:fontFamily="@font/ledger"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        tools:text="Hey this is my question" />
+
+</android.support.v7.widget.CardView>

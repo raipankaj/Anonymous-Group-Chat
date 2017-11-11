@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="place_margin_top">16dp</dimen>
+    <dimen name="country_margin_start">4dp</dimen>
+    <dimen name="recycler_item_padding">8dp</dimen>
+    <dimen name="post_edittext_min_height">48dp</dimen>
+    <dimen name="post_edittext_margin">2dp</dimen>
+    <dimen name="post_edittext_max_height">90dp</dimen>
+    <dimen name="home_recycler_view_margin_bottom">4dp</dimen>
+    <dimen name="post_edittext_padding">8dp</dimen>
+    <dimen name="post_button_margin">4dp</dimen>
+    <dimen name="adapter_item_margin">16dp</dimen>
+    <dimen name="adapter_card_view_item_radius">8dp</dimen>
+</resources>

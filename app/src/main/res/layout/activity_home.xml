@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chat_bg">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/home_recycler_view_margin_bottom"
+        app:layout_constraintBottom_toTopOf="@+id/barrier"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="etMessage, btSend"/>
+
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="0dp"
+        android:minHeight="@dimen/post_edittext_min_height"
+        android:maxHeight="@dimen/post_edittext_max_height"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/post_edittext_margin"
+        android:background="@drawable/rectangular_edittext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="@dimen/post_edittext_padding"
+        app:layout_constraintHorizontal_weight="1.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btSend" />
+
+    <Button
+        android:id="@+id/btSend"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/post_button_margin"
+        android:text="@string/post"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/rectangular_button"
+        app:layout_constraintTop_toTopOf="@+id/etMessage"
+        app:layout_constraintBottom_toBottomOf="@+id/etMessage"
+        app:layout_constraintHorizontal_weight="0.5"
+        app:layout_constraintLeft_toRightOf="@+id/etMessage"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

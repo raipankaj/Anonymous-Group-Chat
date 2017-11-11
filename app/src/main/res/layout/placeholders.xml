@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ivMain"
+        android:src="@drawable/chat_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.4"/>
+
+    <ImageView
+        android:id="@+id/ivSecondary"
+        android:src="@drawable/firebase_all_services"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.4"/>
+
+    <android.support.constraint.Placeholder
+        android:id="@+id/placeholder"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:content="@id/ivMain"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintBottom_toTopOf="@+id/btChange"/>
+
+    <Button
+        android:id="@+id/btChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/change"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
